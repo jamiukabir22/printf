@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int len1;
+	int len;
 	int len2;
 	int unsigned ui;
 	void *addr;
