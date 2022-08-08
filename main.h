@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <stdarg.h>
-#include <stdef.h>
+#include <stddef.h>
 
 int _putchar(char c);
 int print_int(va_list arg);
