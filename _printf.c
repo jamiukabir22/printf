@@ -26,7 +26,7 @@ int printIdentifiers(char next, va_list arg)
 		{"S", print_STR},
 		{NULL, NULL},
 	};
-	for (functsIndex = 0, functs[functsIndex].indentifier =! NULL, functsIndex++)
+	for (functsIndex = 0; functs[functsIndex].indentifier =! NULL; functsIndex++)
 	{
 		if (functs[functsIndex].indentifier[0] == next)
 			return (functs[functsIndex].printer(arg));
@@ -52,7 +52,7 @@ int _printf(const char *format, ...)
 	va_start(arg, format);
 	if (format == NULL)
 		return (-1);
-	for (i = 0, format[i] != '\0'; i++)
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
 		{
