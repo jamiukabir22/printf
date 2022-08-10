@@ -29,7 +29,7 @@ int printIdentifiers(char next, va_list arg)
 	for (functsIndex = 0; functs[functsIndex].indentifier =! NULL; functsIndex++)
 	{
 		if (functs[functsIndex].indentifier[0] == next)
-			return (functs[functsIndex].printer(arg));
+			return (functs[functsIndex].printfunc(arg));
 	}
 	return (0);
 }
